@@ -52,15 +52,19 @@ body{
                             align-items: center;
                             margin-bottom: 10px;
                             color: var(--Main-logo);
+                            
                                 .nav-links-text{                                    
                                     width: inherit;
                                     text-transform: uppercase;
                                     font-size: 10px;
                                     font-weight: bold;
-                                    font-family: PressStart;                                    
+                                    font-family: 'Press Start 2P';
                                     text-align: center;
-                                    /* position: relative;
-                                    line-height: 1.25; */
+                                    transition: all 0.3s;
+                                    
+                                }
+                                .nav-links-text:hover{
+                                    transform: scale(1.1);
                                 }
                         }
                         
@@ -89,7 +93,8 @@ body{
 .menu-nav-links:hover{
     color: var(--icons-headers-tooltips);
     text-decoration: underline var(--icons-headers-tooltips);
-    opacity: 0.7;                        
+    opacity: 0.7;
+                            
 }
 
 .menu-top-nav{
@@ -177,18 +182,34 @@ main{
                     align-self: center;
                     padding: 5px;
                     margin: 2px;
-
+                    overflow: hidden;
                         .card-image{
-                            border: #000 solid 3px;
+                            /* border: #000 solid 3px; */
                             width: inherit;
                             height: inherit;
+                            display: block;
+                            transition: all 0.3s;
+                            
+                        }
+                        .card-image:hover{
+                            transform: scale(1.1);
                         }
                 }
                 .card-text{
                     text-align: center;
                 }
                 .card-links{
-                    margin: 10px 0px 10px 0px;
+                    /* border: #000 solid 1px;
+                    border-radius: 25% 75% 75% 25% / 50% 50% 50% 50% ;
+                    background: linear-gradient(90deg, #141F2A, #586F7C); */
+                    padding: 10px;
+                    margin: 15px 0px 10px 0px;
+                    transition: all 0.3s;
+                    
+                }
+                .card-links:hover{
+                    text-decoration: underline;
+                    transform: scale(1.1);
                 }
         }
 }
@@ -380,7 +401,10 @@ ul{
 }
 i{
     color: var(--icons-headers-tooltips);
+    transition: all 0.3s;
+    
 }
 i:hover{
     opacity: 0.9;
+    transform: scale(1.3);
 }
