@@ -1,0 +1,448 @@
+:root{
+    --nav-menu-Text: #000;
+    --icons-headers-tooltips: #2F4550;
+    --cards: #586F7C;
+    --footer-modal: #141F2A;
+    --main-color: #B8DBD9;
+    --Main-logo: aliceblue;
+}
+body{
+    font-family: 'Montserrat', serif;
+    color: var(--nav-menu-Text);
+    background-color: var(--main-color);
+    text-align: justify;
+    margin: 0px;
+}
+
+/* Header */
+.menu {
+    background-color: var(--nav-menu-Text);
+    box-shadow: 0px 5px 15px 0px rgba(25, 26, 27, 0.5);
+    padding: 10px 0 18px;
+    margin-left: 20px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    z-index: 500;
+        .menu-top-part{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70px;
+                .menu-top-content{
+                    display: flex;
+                    position: fixed;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: inherit;
+                        .menu-icon{
+                            margin: 0;
+                            height: 30px;
+                            width: inherit;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            color: var(--Main-logo);
+                            
+                                .nav-links-text{                                    
+                                    width: inherit;
+                                    text-transform: uppercase;
+                                    font-size: 10px;
+                                    font-weight: bold;
+                                    font-family: 'Press Start 2P';
+                                    text-align: center;
+                                    transition: all 0.3s;
+                                    
+                                }
+                                .nav-links-text:hover{
+                                    transform: scale(1.1);
+                                }
+                        }
+                        
+                        
+                }
+        }
+        .menu-bottom-part{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70px;
+            height: fit-content;
+        }   
+}
+.menu-nav-content{
+    width: inherit;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.menu-nav-links:hover{
+    color: var(--icons-headers-tooltips);
+    text-decoration: underline var(--icons-headers-tooltips);
+    opacity: 0.7;
+                            
+}
+
+.menu-top-nav{
+    padding-bottom: 10px;
+}
+
+
+/* Main Part */
+main{
+    
+    .bloc{
+        min-height: 500px;
+        padding: 10px 20px 10px 120px;
+        margin-bottom: 10px;
+        background-color:var(--main-color);
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+             .bloc-title{
+               width: -webkit-fill-available;
+               padding-left: 15px;
+               background-color: var(--cards);
+            }
+            
+    }
+}
+/* Upper main part */
+.upper-part-games{
+    background-image: url(../images/Zelda-SS.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upper-part-anime{
+    background-image: url(../images/Mugiwaras.jpeg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.upper-part-cinema{
+    background-image: url(../images/2fast-2furious.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.upper-part-tv-shows{
+    background-image: url(../images/ahs.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.upper-part-video{
+    background-image: url(../images/sidemen-holding-plaques.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+/* Cards */
+.card-container{
+    display:flex;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+    
+        .card{
+            background-color: var(--cards);
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            border: #000 solid 1px;
+            margin: 5px;
+            padding: 8px;
+
+                .card-image-container{
+                    width: -webkit-fill-available;
+                    align-self: center;
+                    padding: 5px;
+                    margin: 2px;
+                    overflow: hidden;
+                        .card-image{
+                            /* border: #000 solid 3px; */
+                            width: inherit;
+                            height: inherit;
+                            display: block;
+                            transition: all 0.3s;
+                            padding: 15px;
+                        }
+                        .card-image:hover{
+                            transform: scale(1.1);
+                        }
+                }
+                .card-text{
+                    text-align: center;
+                }
+                .card-links{
+                    /* border: #000 solid 1px;
+                    border-radius: 25% 75% 75% 25% / 50% 50% 50% 50% ;
+                    background: linear-gradient(90deg, #141F2A, #586F7C); */
+                    padding: 10px;
+                    margin: 15px 0px 10px 0px;
+                    transition: all 0.3s;
+                    
+                }
+                .card-links:hover{
+                    text-decoration: underline;
+                    transform: scale(1.1);
+                }
+        }
+}
+.back-effect{
+    min-height: 400px;
+}
+/* Footer */
+footer{
+    color: var(--nav-menu-Text);
+    background-color:var(--footer-modal);
+    border-top: black solid 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+        .footer-apps{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        a{
+            color: var(--nav-menu-Text);
+        }
+}
+.footer-list-content{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.fa-brands{
+    color: black;
+}
+ /* Tooltip block */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Tooltip text */
+.tooltip .tooltip-text {
+visibility: hidden;
+width: 120px;
+background-color: var(--icons-headers-tooltips);
+
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+top: -5px;
+left: 105%;
+
+/* Position the tooltip text - see examples below! */
+position: absolute;
+z-index: 1;
+}
+.tooltip .tooltip-text::after{
+    content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+visibility: visible;
+}
+/* Modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+  }
+  .overlay .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+.popup {
+margin: 75px auto;
+padding: 20px;
+background: var(--footer-modal);
+border: 1px solid #666;
+width: 350px;
+box-shadow: 0px 0px 10px 8px rgba(255, 255, 255, 0.450);
+position: relative;
+}
+.popup h2 {
+margin-top: 0;
+color: var(--icons-headers-tooltips);
+}
+.popup .close {
+position: absolute;
+width: 20px;
+height: 20px;
+top: 20px;
+right: 20px;
+opacity: 0.8;
+transition: all 200ms;
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
+color: #666;
+}
+.popup .content {
+max-height: 400px;
+overflow: auto;
+}
+.modal-header{
+    border-bottom: #000000 solid 2px;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+.modal-header h2{
+    margin-bottom: 0px;
+}
+.modal-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: start;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        label {
+        display: inline-block;
+        width: 150px;
+        }
+}
+.line-input-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2.5px 0 2.5px 0px;
+    text-align: start;
+}
+.form-control:focus::placeholder{
+    color: transparent;    
+}
+.btn-sign{
+    margin-top: 3px;
+}
+.modal-footer a{
+    color: var(--nav-menu-Text);
+    border-top: black solid 2px ;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-self: center;
+    text-decoration: underline;
+    text-align: center;
+}
+.modal-footer a:hover{
+    opacity: 0.7;
+}
+
+
+/* Grid */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+.grid-title{
+    grid-row: 1/2;
+    grid-column: 1/4;
+    background-color: var(--footer-modal);
+    margin: 10px;
+}
+.grid-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 2/4;
+    grid-column: 1/2;
+    border: #000 solid 1px;
+    margin: 15px;
+    padding: 30px;
+        img{
+            width: 350px;
+            height: 500px;
+        }
+}
+.grid-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-row: 2/5;
+    grid-column: 2/4;
+    border: #000 solid 1px;
+    margin: 15px;
+    padding: 0px 15px 0px 15px;
+}
+
+/* Balises */
+h1, h2, h3, h4{
+    color: var(--icons-headers-tooltips);
+}
+a {
+    text-decoration: none;
+    color: var(--nav-menu-Text);
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+i{
+    color: var(--icons-headers-tooltips);
+    transition: all 0.3s;
+    
+}
+i:hover{
+    opacity: 0.9;
+    transform: scale(1.3);
+}

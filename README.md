@@ -4,3 +4,5 @@ wikifan is a website inspired by fandom that i created to experiment on html &am
 <!-- Updates -->
 
 -Added a "Zoom-in" effect on icons and card images and links.
+
+-Added new pages with a bit of content
